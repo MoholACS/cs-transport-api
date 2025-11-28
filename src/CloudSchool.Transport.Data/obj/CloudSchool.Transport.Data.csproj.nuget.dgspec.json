@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Data/CloudSchool.Transport.Data.csproj": {}
+  },
+  "projects": {
+    "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/CloudSchool.Transport.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/CloudSchool.Transport.Core.csproj",
+        "projectName": "CloudSchool.Transport.Core",
+        "projectPath": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/CloudSchool.Transport.Core.csproj",
+        "packagesPath": "/home/mohol/.nuget/packages/",
+        "outputPath": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "/home/mohol/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.OpenApi": "9.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.0",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+            "Microsoft.NET.Test.Sdk": "17.8.0",
+            "Swashbuckle.AspNetCore": "6.5.0",
+            "xunit": "2.6.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Data/CloudSchool.Transport.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Data/CloudSchool.Transport.Data.csproj",
+        "projectName": "CloudSchool.Transport.Data",
+        "projectPath": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Data/CloudSchool.Transport.Data.csproj",
+        "packagesPath": "/home/mohol/.nuget/packages/",
+        "outputPath": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Data/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "/home/mohol/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/CloudSchool.Transport.Core.csproj": {
+                "projectPath": "/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/CloudSchool.Transport.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Microsoft.AspNetCore.OpenApi": "9.0.0",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.0",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+            "Microsoft.NET.Test.Sdk": "17.8.0",
+            "Swashbuckle.AspNetCore": "6.5.0",
+            "xunit": "2.6.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

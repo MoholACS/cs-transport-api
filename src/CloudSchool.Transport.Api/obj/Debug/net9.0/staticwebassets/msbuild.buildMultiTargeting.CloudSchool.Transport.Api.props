@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CloudSchool.Transport.Api.props" />
+</Project>

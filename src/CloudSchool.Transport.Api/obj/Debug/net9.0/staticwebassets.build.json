@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "W0zuOFdi0kcZ5Kb9lTHI2AZufZEGoP17S4BWC+sgk6Q=",
+  "Source": "CloudSchool.Transport.Api",
+  "BasePath": "_content/CloudSchool.Transport.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

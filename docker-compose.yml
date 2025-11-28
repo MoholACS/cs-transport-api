@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # 1. Database Service
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest # Use a stable SQL Server image
+    container_name: transport-db
+    environment:
+      SA_PASSWORD: "UgaliPass123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      # Map the internal port 1433 to host port 1433 (optional, for external tools)
+      - "1433:1433"
+    volumes:
+      # Persist data so it doesn't disappear when the container stops
+      - mssql_data:/var/opt/mssql
+
+  # 2. API Service
+  api:
+    build:
+      context: . # Look for the Dockerfile in the current directory
+      dockerfile: Dockerfile
+    container_name: transport-api
+    ports:
+      # Expose the API's port to your host machine
+      - "5000:8080" # Map host 5000 to container port 8080 (ASP.NET default)
+    depends_on:
+      - db # Ensure the database starts before the API
+    environment:
+      # Optional: Set ASPNETCORE_ENVIRONMENT to ensure the correct appsettings loads
+      # TODO: Make this a env variable
+      ASPNETCORE_ENVIRONMENT: Development
+      # Use the connection string defined in appsettings.Development.json
+      ConnectionStrings__TransportDbConnection: "Server=db,1433;Database=TransportDB;User Id=sa;Password=UgaliPass123!;TrustServerCertificate=True;"
+
+volumes:
+  mssql_data:

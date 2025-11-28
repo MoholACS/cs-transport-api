@@ -1,0 +1,12 @@
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/bin/Debug/net9.0/CloudSchool.Transport.Core.deps.json
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/bin/Debug/net9.0/CloudSchool.Transport.Core.dll
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/bin/Debug/net9.0/CloudSchool.Transport.Core.pdb
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.AssemblyInfoInputs.cache
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.AssemblyInfo.cs
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.csproj.CoreCompileInputs.cache
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.sourcelink.json
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.dll
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/refint/CloudSchool.Transport.Core.dll
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/CloudSchool.Transport.Core.pdb
+/home/mohol/acs/cs-transport-api/src/CloudSchool.Transport.Core/obj/Debug/net9.0/ref/CloudSchool.Transport.Core.dll
