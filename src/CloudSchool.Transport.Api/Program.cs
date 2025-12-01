@@ -1,11 +1,24 @@
+
 using CloudSchool.Transport.Api.Extensions;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
+using CloudSchool.Transport.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 // get connection string from app settings development
 var connectionString = builder.Configuration.GetConnectionString("Database");
+
+// register connection string
+builder.Services.AddDbContext<TransportDbContext>(options =>
+{   
+    // the name of the connection string will use the name of the service
+    // Defined in the docker compose
+    options.UseSqlServer(connectionString);
+});
+
 // Add HttpContext accessor for request context access
 builder.Services.AddHttpContextAccessor();
 
@@ -52,19 +65,22 @@ static string ExpandEnvPlaceholder(string input)
 
 builder.Services.AddSwaggerGen(c =>
 {
-    var description =$"School management API with SSO integration for transport operations<br/>" +
-                     
-                     $"API ENDPOINT STATUS: <br/>" +
-                     $" 🟡 **BETA** - Public API, but may change.<br/>" +
-                     $"🟠 **EXPERIMENTAL** - New feature, may change.<br/>" +
-                     $"🔴 **DRAFT** - Under active development, may change without notice.<br/>" +
-                     $"🟢 **STABLE** - Fully tested and supported for production use.<br/>";
+    var description =
+        $"School management API with SSO integration for transport operations<br/>"
+        + $"API ENDPOINT STATUS: <br/>"
+        + $" 🟡 **BETA** - Public API, but may change.<br/>"
+        + $"🟠 **EXPERIMENTAL** - New feature, may change.<br/>"
+        + $"🔴 **DRAFT** - Under active development, may change without notice.<br/>"
+        + $"🟢 **STABLE** - Fully tested and supported for production use.<br/>";
     
-    c.SwaggerDoc("v1", new() { 
-        Title = "CloudSchool.Core Transport API", 
-        Version = "v1",
-        Description = description
-    });
+    c.SwaggerDoc(
+        "v1",
+        new()
+        {
+            Title = "CloudSchool.Core Transport API",
+            Version = "v1",
+            Description = description
+        });
 
     // Include XML comments for API documentation
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

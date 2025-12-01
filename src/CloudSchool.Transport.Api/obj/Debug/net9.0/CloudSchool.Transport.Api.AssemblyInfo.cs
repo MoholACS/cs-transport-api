@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudSchool.Transport.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5902b80a1904542d216618c1055ef7169a3a706")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a07caaeb17ed6fb7bcef87a02787168fe6087214")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudSchool.Transport.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudSchool.Transport.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
